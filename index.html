@@ -14,7 +14,6 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -28,7 +27,6 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contacts">Contact</a></li>
             </ul>
@@ -76,68 +74,104 @@
             <a href="#" class="tailwind"><i class='bx bxl-tailwind-css'></i></a>
         </div>
     </section>
-    <section class="about" id="about">
-        <div class="container-1">
-            <div class="about-content">
-                <div class="img-side">
-                    <img src="images/about-img-1.jpg" class="img-side__main-img " alt="">
-                </div>
-                <div class="text-side">
-                    <h3>About Me 🦝</h3>
-                    <p>I am a dedicated student pursuing BSc in Computer Science from Assam University, Silchar. I
-                        completed my schooling at Kendriya Vidyalaya AFS Kumbhirgram. With a passion for web
-                        development, I have acquired extensive knowledge in various technologies. I am proficient in
-                        Express.js, Node.js, React.js, JavaScript, C, C++, Python, as well as popular Python frameworks.
-                        My skill set also includes HTML, CSS, Bootstrap, and Tailwind CSS. I am enthusiastic about
-                        creating dynamic and user-friendly web experiences. Constantly seeking new challenges, I am
-                        eager to contribute my skills and grow as a professional web developer.</p>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="projects" id="projects">
         <div class="container">
             <p class="pro-title">Projects</p>
             <h3>Each Project is a unique piece of development 💡</h3>
-            <div class="grid-container">
-                <div class="image-container">
-                    <img src="images/project-1.png" alt="Your Image">
-                </div>
-                <script>
-                    const imageContainer = document.querySelector('.image-container');
-                    const image = document.querySelector('.image-container img');
-
-                    imageContainer.addEventListener('mouseenter', function () {
-                        const scrollAmount = image.offsetHeight - imageContainer.offsetHeight;
-                        image.style.transform = `translateY(-${scrollAmount}px)`;
-                    });
-
-                    imageContainer.addEventListener('mouseleave', function () {
-                        image.style.transform = 'translateY(0)';
-                    });
-
-                </script>
-                <div class="pro-desc-1">
-                    <h2><i class='bx bxl-spotify spomtify'></i> Spomtify</h2>
-                    <p class="desc-1">Spomtify: Experience the ultimate music streaming platform with Spomtify, a
-                        stunning Spotify landing page clone. Discover, create playlists, and enjoy your favorite tunes
-                        in a sleek and user-friendly interface</p>
-                    <div class="skills">
-                        <button type="button" class="btn btn-light btn-frame">HTML</button>
-                        <button type="button" class="btn btn-light btn-frame">CSS</button>
-                        <button type="button" class="btn btn-light btn-frame">Bootstrap</button>
+            <div class="project-container">
+                <div class="grid-container">
+                    <div class="image-container">
+                        <img src="images/project-1.png" alt="Your Image">
                     </div>
-                    <div class="links">
-                        <a href="https://github.com/ayushroy-117/Spomtify">Code<i class="bx bxl-github"></i></a>
+                    <div class="pro-desc-1">
+                        <h2><i class='bx bxl-spotify spomtify'></i> Spomtify</h2>
+                        <p class="desc-1">Spomtify: Experience the ultimate music streaming platform with Spomtify, a
+                            stunning Spotify landing page clone. Discover, create playlists, and enjoy your favorite
+                            tunes
+                            in a sleek and user-friendly interface</p>
+                        <div class="skills">
+                            <button type="button" class="btn btn-light btn-frame">HTML</button>
+                            <button type="button" class="btn btn-light btn-frame">CSS</button>
+                            <button type="button" class="btn btn-light btn-frame">Bootstrap</button>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/ayushroy-117/Spomtify">Code<i class="bx bxl-github"></i></a>
 
-                        <a href="https://spomtify.vercel.app/">Live Demo<i class="bx bx-link-external"></i></a>
+                            <a href="https://spomtify.vercel.app/">Live Demo<i class="bx bx-link-external"></i></a>
 
+                        </div>
+                        <script>
+                            const imageContainer = document.querySelector('.image-container');
+                            const image = document.querySelector('.image-container img');
+                
+                            imageContainer.addEventListener('mouseenter', () => {
+                                const scrollAmount = image.offsetHeight - imageContainer.offsetHeight;
+                                image.style.transform = `translateY(-${scrollAmount}px)`;
+                            });
+                
+                            imageContainer.addEventListener('mouseleave', () => {
+                                image.style.transform = 'translateY(0)';
+                            });
+                
+                        </script>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="pro-desc-1">
+                        <h2 style="font-family: 'Pacifico', cursive;"><i class='bx bxs-cat'></i> meowMatch</h2>
+                        <p class="desc-1">MeowMatch is the ultimate destination for cat enthusiasts seeking love and companionship. Our cat-themed dating app is designed to bring together like-minded individuals who share a passion for felines. Whether you're a proud cat owner or simply adore these magnificent creatures, MeowMatch provides a purr-fect platform for you to connect with your feline soulmate.</p>
+                        <div class="skills">
+                            <button type="button" class="btn btn-light btn-frame">HTML</button>
+                            <button type="button" class="btn btn-light btn-frame">CSS</button>
+                            <button type="button" class="btn btn-light btn-frame">Bootstrap</button>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/ayushroy-117/meowMatch">Code<i class="bx bxl-github"></i></a>
+
+                            <a href="https://meow-match-sigma.vercel.app/">Live Demo<i class="bx bx-link-external"></i></a>
+                        </div>
+                    </div>
+                    <div class="image-container-1">
+                        <img src="images/screenshot.png" alt="Your Image">
+                    </div>
+                    <script>
+                        const imageContainer1 = document.querySelector('.image-container-1');
+                        const image1 = document.querySelector('.image-container-1 img');
+            
+                        imageContainer1.addEventListener('mouseenter', () => {
+                            const scrollAmount = image.offsetHeight - imageContainer1.offsetHeight;
+                            image1.style.transform = `translateY(-${scrollAmount}px)`;
+                        });
+            
+                        imageContainer1.addEventListener('mouseleave', () => {
+                            image1.style.transform = 'translateY(0)';
+                        });
+            
+                    </script>
+                </div>
+                <div class="grid-container">
+                    <div class="image-container">
+                        <img class="img-2"src="images/screenshot-2.png" style="margin-top: 30px;" alt="Your Image">
+                    </div>
+                    <div class="pro-desc-1">
+                        <h2><i class='bx bxs-calculator' ></i> Minimalistic-Calculator</h2>
+                        <p class="desc-1">The Minimalistic Calculator is a sleek and simple tool designed to perform basic mathematical calculations with ease. Stripping away unnecessary clutter and complex features, this calculator focuses on delivering a clean and minimalist user interface for a seamless calculation experience.</p>
+                        <div class="skills">
+                            <button type="button" class="btn btn-light btn-frame">HTML</button>
+                            <button type="button" class="btn btn-light btn-frame">CSS</button>
+                            <button type="button" class="btn btn-light btn-frame">JavaScript</button>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/ayushroy-117/Minimalistic-Calculator">Code<i class="bx bxl-github"></i></a>
+
+                            <a href="https://minimalistic-calculator.vercel.app/">Live Demo<i class="bx bx-link-external"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
-
+        
     </section>
     <div class="bor"></div>
     <section class="contacts" id="contacts">
